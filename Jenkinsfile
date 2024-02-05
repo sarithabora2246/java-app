@@ -14,7 +14,7 @@ pipeline {
         }
     stage('Checkout') {
       steps {
-        git branch: 'main', url: 'https://github.com/sarithabora2246/java-app.git'
+        git branch: 'master', url: 'https://github.com/sarithabora2246/java-app.git'
       }
     }
     stage('Pull Changes') {
