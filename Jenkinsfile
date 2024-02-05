@@ -4,14 +4,7 @@ pipeline {
       maven 'maven3' 
   }
   stages {
-    stage("foo") {
-            steps {
-                script {
-                    env.FILENAME = readFile 'output.txt'
-                }
-                echo "${env.FILENAME}"
-            }
-        }
+    
     stage('Checkout') {
       steps {
         git branch: 'master', url: 'https://github.com/sarithabora2246/java-app.git'
