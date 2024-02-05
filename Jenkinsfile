@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Pull Changes') {
       steps {
-        sh 'git pull origin main'
+        sh 'git pull origin master'
       }
     }
     stage('Build') {
